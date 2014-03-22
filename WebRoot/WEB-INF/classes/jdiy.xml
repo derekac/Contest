@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jdiy-config xmlns="http://www.jdiy.net"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.jdiy.net jdiy.xsd">
+	<databases default="def" showSql="true">
+	
+		<database name="spiderinfo">
+			<type>MySQL</type>
+			<host>127.0.0.1</host>
+			<port>3306</port>
+			<name>spiderinfo</name>
+			<uid>root</uid>
+			<pwd>123456</pwd>
+			<maxPools>32</maxPools>
+			<maxed>WAIT</maxed>
+		</database>
+
+		<!-- 默认数据库配置 -->
+		<database name="def">
+			<type>MySQL</type>
+			<host>127.0.0.1</host>
+			<port>3306</port>
+			<name>spiderinfo</name>
+			<uid>root</uid>
+			<pwd>123456</pwd>
+			<maxPools>32</maxPools>
+			<maxed>WAIT</maxed>
+		</database>
+	</databases>
+</jdiy-config>
