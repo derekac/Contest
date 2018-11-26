@@ -103,7 +103,7 @@ public class SpiderContest {
 		String content = null;
 		int cnt = 0;
 		while (retry != 0) {
-			logger.info("#重试第" + cnt + "次抓取");
+			logger.info("#重试第 " + cnt + " 次抓取");
 			content = HttpClientSpider.crawl(url, 6000, charset);
 			if (content != null)
 				return content;
